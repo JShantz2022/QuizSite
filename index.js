@@ -19,18 +19,18 @@ function questionOne(){
         case true:
             switch (questionNumber) {
                 case 0:
-                    if(response.innerHTML != "Correct"){
+                    if(response.innerHTML !== "Correct"){
                         score++;
                     }
                     response.innerHTML = "Correct";
                     response.style.color = "green";
                     txtScore.innerHTML = "Your total score is: " + score + "/5";
-                    if(score == 5){
+                    if(score === 5){
                         congrats.innerHTML= "Congratulations!! You got every question right."
                     }
                     break;
                 case 1:
-                    if(score != 0 && response.innerHTML == "Correct"){
+                    if(score !== 0 && response.innerHTML === "Correct"){
                         score--;
                     }
                     response.innerHTML = "Incorrect";
@@ -38,7 +38,7 @@ function questionOne(){
                     txtScore.innerHTML = "Your total score is: " + score + "/5";
                     break;
                 case 2:
-                    if(score != 0 && response.innerHTML == "Correct"){
+                    if(score !== 0 && response.innerHTML === "Correct"){
                         score--;
                     }
                     response.innerHTML = "Incorrect";
@@ -46,13 +46,13 @@ function questionOne(){
                     txtScore.innerHTML = "Your total score is: " + score + "/5";
                     break;
                 case 3:
-                    if(response.innerHTML != "Correct"){
+                    if(response.innerHTML !== "Correct"){
                         score++;
                     }
                     response.innerHTML = "Correct";
                     response.style.color = "green";
                     txtScore.innerHTML = "Your total score is: " + score + "/5";
-                    if(score == 5){
+                    if(score === 5){
                         congrats.innerHTML= "Congratulations!! You got every question right."
                     }
                     break;
@@ -64,7 +64,7 @@ function questionOne(){
         default:
             switch (questionNumber) {
                 case 0:
-                    if(score != 0 && response.innerHTML == "Correct"){
+                    if(score !== 0 && response.innerHTML === "Correct"){
                         score--;
                     }
                     response.innerHTML = "Incorrect";
@@ -72,29 +72,29 @@ function questionOne(){
                     txtScore.innerHTML = "Your total score is: " + score + "/5";
                     break;
                 case 1:
-                    if(response.innerHTML != "Correct"){
+                    if(response.innerHTML !== "Correct"){
                         score++;
                     }
                     response.innerHTML = "Correct";
                     response.style.color = "green";
                     txtScore.innerHTML = "Your total score is: " + score + "/5";
-                    if(score == 5){
+                    if(score === 5){
                         congrats.innerHTML= "Congratulations!! You got every question right."
                     }
                     break;
                 case 2:
-                    if(response.innerHTML != "Correct"){
+                    if(response.innerHTML !== "Correct"){
                         score++;
                     }
                     response.innerHTML = "Correct";
                     response.style.color = "green";
                     txtScore.innerHTML = "Your total score is: " + score + "/5";
-                    if(score == 5){
+                    if(score === 5){
                         congrats.innerHTML= "Congratulations!! You got every question right."
                     }
                     break;
                 case 3:
-                    if(score != 0 && response.innerHTML == "Correct"){
+                    if(score !== 0 && response.innerHTML === "Correct"){
                         score--;
                     }
                     response.innerHTML = "Incorrect";
@@ -236,7 +236,7 @@ function questionThree(){
     answer = parseInt(prompt(thirdQuestion[questionNumber]));
     nonNumeric = Number.isNaN(answer);
 
-    while(nonNumeric == true){
+    while(nonNumeric === true){
         answer = parseInt(prompt("You didn't enter a numeric value. Please try again. " + thirdQuestion[questionNumber]));
         nonNumeric = Number.isNaN(answer);
     
@@ -244,19 +244,19 @@ function questionThree(){
 
     switch (questionNumber) {
         case 0:
-            if( answer == 51){
+            if( answer === 51){
                 if(response.innerHTML != "Correct"){
                     score++;
                 }
                 response.innerHTML = "Correct";
                 response.style.color = "green";
                 txtScore.innerHTML = "Your total score is: " + score + "/5";
-                if(score == 5){
+                if(score === 5){
                     congrats.innerHTML= "Congratulations!! You got every question right."
                 }
             }
             else{
-                if(score != 0 && response.innerHTML == "Correct"){
+                if(score !== 0 && response.innerHTML === "Correct"){
                     score--;
                 }
                 response.innerHTML = "Incorrect";
@@ -265,19 +265,19 @@ function questionThree(){
             }
             break;
         case 1:
-            if(answer == 5){
-                if(response.innerHTML != "Correct"){
+            if(answer === 5){
+                if(response.innerHTML !== "Correct"){
                     score++;
                 }
                 response.innerHTML = "Correct";
                 response.style.color = "green";
                 txtScore.innerHTML = "Your total score is: " + score + "/5";
-                if(score == 5){
+                if(score === 5){
                     congrats.innerHTML= "Congratulations!! You got every question right."
                 }
             }
             else{
-                if(score != 0 && response.innerHTML == "Correct"){
+                if(score !== 0 && response.innerHTML === "Correct"){
                     score--;
                 }
                 response.innerHTML = "Incorrect";
@@ -286,19 +286,19 @@ function questionThree(){
             }
             break;
         case 2:
-            if(answer == 192){
-                if(response.innerHTML != "Correct"){
+            if(answer === 192){
+                if(response.innerHTML !== "Correct"){
                     score++;
                 }
                 response.innerHTML = "Correct";
                 response.style.color = "green";
                 txtScore.innerHTML = "Your total score is: " + score + "/5";
-                if(score == 5){
+                if(score === 5){
                     congrats.innerHTML= "Congratulations!! You got every question right."
                 }
             }
             else{
-                if(score != 0 && response.innerHTML == "Correct"){
+                if(score !== 0 && response.innerHTML === "Correct"){
                     score--;
                 }
                 response.innerHTML = "Incorrect";
@@ -307,19 +307,19 @@ function questionThree(){
             }
             break
         default:
-           if(answer == 11){
-            if(response.innerHTML != "Correct"){
+           if(answer === 11){
+            if(response.innerHTML !== "Correct"){
                 score++;
             }
             response.innerHTML = "Correct";
             response.style.color = "green";
             txtScore.innerHTML = "Your total score is: " + score + "/5";
-            if(score == 5){
+            if(score === 5){
                 congrats.innerHTML= "Congratulations!! You got every question right."
             }
            }
            else{
-            if(score != 0 && response.innerHTML == "Correct"){
+            if(score !== 0 && response.innerHTML === "Correct"){
                 score--;
             }
             response.innerHTML = "Incorrect";
@@ -348,7 +348,7 @@ function questionFour(){
     answer = parseInt(prompt(fourthQuestion[questionNumber]));
     nonNumeric = Number.isNaN(answer);
     
-    while(nonNumeric == true){
+    while(nonNumeric === true){
         answer = parseInt(prompt("You didn't enter a numeric value. Please try again. " + fourthQuestion[questionNumber]));
         nonNumeric = Number.isNaN(answer);
     
@@ -357,19 +357,19 @@ function questionFour(){
 
     switch (questionNumber) {
         case 0:
-            if( answer == 13){
-                if(response.innerHTML != "Correct"){
+            if( answer === 13){
+                if(response.innerHTML !== "Correct"){
                     score++;
                 }
                 response.innerHTML = "Correct";
                 response.style.color = "green";
                 txtScore.innerHTML = "Your total score is: " + score + "/5";
-                if(score == 5){
+                if(score === 5){
                     congrats.innerHTML= "Congratulations!! You got every question right."
                 }
             }
             else{
-                if(score != 0 && response.innerHTML == "Correct"){
+                if(score !== 0 && response.innerHTML === "Correct"){
                     score--;
                 }
                 response.innerHTML = "Incorrect";
@@ -378,19 +378,19 @@ function questionFour(){
             }
             break;
         case 1:
-            if(answer == 12){
-                if(response.innerHTML != "Correct"){
+            if(answer === 12){
+                if(response.innerHTML !== "Correct"){
                     score++;
                 }
                 response.innerHTML = "Correct";
                 response.style.color = "green";
                 txtScore.innerHTML = "Your total score is: " + score + "/5";
-                if(score == 5){
+                if(score === 5){
                     congrats.innerHTML= "Congratulations!! You got every question right."
                 }
             }
             else{
-                if(score != 0 && response.innerHTML == "Correct"){
+                if(score !== 0 && response.innerHTML === "Correct"){
                     score--;
                 }
                 response.innerHTML = "Incorrect";
@@ -399,19 +399,19 @@ function questionFour(){
             }
             break;
         case 2:
-            if(answer == 50){
-                if(response.innerHTML != "Correct"){
+            if(answer === 50){
+                if(response.innerHTML !== "Correct"){
                     score++;
                 }
                 response.innerHTML = "Correct";
                 response.style.color = "green";
                 txtScore.innerHTML = "Your total score is: " + score + "/5";
-                if(score == 5){
+                if(score === 5){
                     congrats.innerHTML= "Congratulations!! You got every question right."
                 }
             }
             else{
-                if(score != 0 && response.innerHTML == "Correct"){
+                if(score !== 0 && response.innerHTML === "Correct"){
                     score--;
                 }
                 response.innerHTML = "Incorrect";
@@ -420,19 +420,19 @@ function questionFour(){
             }
             break
         default:
-           if(answer == 31){
-            if(response.innerHTML != "Correct"){
+           if(answer === 31){
+            if(response.innerHTML !== "Correct"){
                 score++;
             }
             response.innerHTML = "Correct";
             response.style.color = "green";
             txtScore.innerHTML = "Your total score is: " + score + "/5";
-            if(score == 5){
+            if(score === 5){
                 congrats.innerHTML= "Congratulations!! You got every question right."
             }
            }
            else{
-            if(score != 0 && response.innerHTML == "Correct"){
+            if(score !== 0 && response.innerHTML === "Correct"){
                 score--;
             }
             response.innerHTML = "Incorrect";
@@ -462,18 +462,18 @@ function questionFive(){
         case true:
             switch (questionNumber) {
                 case 0:
-                    if(response.innerHTML != "Correct"){
+                    if(response.innerHTML !== "Correct"){
                         score++;
                     }
                     response.innerHTML = "Correct";
                     response.style.color = "green";
                     txtScore.innerHTML = "Your total score is: " + score + "/5";
-                    if(score == 5){
+                    if(score === 5){
                         congrats.innerHTML= "Congratulations!! You got every question right."
                     }
                     break;
                 case 1:
-                    if(score != 0 && response.innerHTML == "Correct"){
+                    if(score !== 0 && response.innerHTML === "Correct"){
                         score--;
                     }
                     response.innerHTML = "Incorrect";
@@ -481,24 +481,24 @@ function questionFive(){
                     txtScore.innerHTML = "Your total score is: " + score + "/5";
                     break;
                 case 2:
-                    if(response.innerHTML != "Correct"){
+                    if(response.innerHTML !== "Correct"){
                         score++;
                     }
                     response.innerHTML = "Correct";
                     response.style.color = "green";
                     txtScore.innerHTML = "Your total score is: " + score + "/5";
-                    if(score == 5){
+                    if(score === 5){
                         congrats.innerHTML= "Congratulations!! You got every question right."
                     }
                     break;
                 case 3:
-                    if(response.innerHTML != "Correct"){
+                    if(response.innerHTML !== "Correct"){
                         score++;
                     }
                     response.innerHTML = "Correct";
                     response.style.color = "green";
                     txtScore.innerHTML = "Your total score is: " + score + "/5";
-                    if(score == 5){
+                    if(score === 5){
                         congrats.innerHTML= "Congratulations!! You got every question right."
                     }
                     break;
@@ -510,7 +510,7 @@ function questionFive(){
         default:
             switch (questionNumber) {
                 case 0:
-                    if(score != 0 && response.innerHTML == "Correct"){
+                    if(score !== 0 && response.innerHTML === "Correct"){
                         score--;
                     }
                     response.innerHTML = "Incorrect";
@@ -518,18 +518,18 @@ function questionFive(){
                     txtScore.innerHTML = "Your total score is: " + score + "/5";
                     break;
                 case 1:
-                    if(response.innerHTML != "Correct"){
+                    if(response.innerHTML !== "Correct"){
                         score++;
                     }
                     response.innerHTML = "Correct";
                     response.style.color = "green";
                     txtScore.innerHTML = "Your total score is: " + score + "/5";
-                    if(score == 5){
+                    if(score === 5){
                         congrats.innerHTML= "Congratulations!! You got every question right."
                     }
                     break;
                 case 2:
-                    if(score != 0 && response.innerHTML == "Correct"){
+                    if(score !== 0 && response.innerHTML === "Correct"){
                         score--;
                     }
                     response.innerHTML = "Incorrect";
@@ -537,7 +537,7 @@ function questionFive(){
                     txtScore.innerHTML = "Your total score is: " + score + "/5";
                     break;
                 case 3:
-                    if(score != 0 && response.innerHTML == "Correct"){
+                    if(score !== 0 && response.innerHTML === "Correct"){
                         score--;
                     }
                     response.innerHTML = "Incorrect";
