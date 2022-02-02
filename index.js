@@ -124,22 +124,24 @@ function questionTwo(){
 
     var answer = prompt(secondQuestion[questionNumber]);
 
+
+
     switch (questionNumber) {
         case 0:
-            answer = answer.toLowerCase;
-            if( answer == "cat"){
-                if(response.innerHTML != "Correct"){
+            answer = answer.toLowerCase();
+            if( answer === "cat"){
+                if(response.innerHTML !== "Correct"){
                     score++;
                 }
                 response.innerHTML = "Correct";
                 response.style.color = "green";
                 txtScore.innerHTML = "Your total score is: " + score + "/5";
-                if(score == 5){
+                if(score === 5){
                     congrats.innerHTML= "Congratulations!! You got every question right."
                 }
             }
             else{
-                if(score != 0 && response.innerHTML == "Correct"){
+                if(score !== 0 && response.innerHTML === "Correct"){
                     score--;
                 }
                 response.innerHTML = "Incorrect";
@@ -148,20 +150,20 @@ function questionTwo(){
             }
             break;
         case 1:
-            answer = answer.toLowerCase;
-            if(answer == "moo"){
-                if(response.innerHTML != "Correct"){
+            answer = answer.toLowerCase();
+            if(answer === "moo"){
+                if(response.innerHTML !== "Correct"){
                     score++;
                 }
                 response.innerHTML = "Correct";
                 response.style.color = "green";
                 txtScore.innerHTML = "Your total score is: " + score + "/5";
-                if(score == 5){
+                if(score === 5){
                     congrats.innerHTML= "Congratulations!! You got every question right."
                 }
             }
             else{
-                if(score != 0 && response.innerHTML == "Correct"){
+                if(score !== 0 && response.innerHTML === "Correct"){
                     score--;
                 }
                 response.innerHTML = "Incorrect";
@@ -170,20 +172,20 @@ function questionTwo(){
             }
             break;
         case 2:
-            answer = answer.toLowerCase;
-            if(answer == "apple"){
-                if(response.innerHTML != "Correct"){
+            answer = answer.toLowerCase();
+            if(answer === "apple"){
+                if(response.innerHTML !== "Correct"){
                     score++;
                 }
                 response.innerHTML = "Correct";
                 response.style.color = "green";
                 txtScore.innerHTML = "Your total score is: " + score + "/5";
-                if(score == 5){
+                if(score === 5){
                     congrats.innerHTML= "Congratulations!! You got every question right."
                 }
             }
             else{
-                if(score != 0 && response.innerHTML == "Correct"){
+                if(score !== 0 && response.innerHTML === "Correct"){
                     score--;
                 }
                 response.innerHTML = "Incorrect";
@@ -192,20 +194,20 @@ function questionTwo(){
             }
             break
         default:
-            answer = answer.toLowerCase;
-           if(answer == "fire"){
-            if(response.innerHTML != "Correct"){
+            answer = answer.toLowerCase();
+           if(answer === "fire"){
+            if(response.innerHTML !== "Correct"){
                 score++;
             }
             response.innerHTML = "Correct";
             response.style.color = "green";
             txtScore.innerHTML = "Your total score is: " + score + "/5";
-            if(score == 5){
+            if(score === 5){
                 congrats.innerHTML= "Congratulations!! You got every question right."
             }
            }
            else{
-            if(score != 0 && response.innerHTML == "Correct"){
+            if(score !== 0 && response.innerHTML === "Correct"){
                 score--;
             }
             response.innerHTML = "Incorrect";
