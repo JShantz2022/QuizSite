@@ -30,7 +30,7 @@ function questionOne(){
                     }
                     break;
                 case 1:
-                    if(score != 0 && response.innerHTML != "Incorrect" && response.innerHTML != ""){
+                    if(score != 0 && response.innerHTML == "Correct"){
                         score--;
                     }
                     response.innerHTML = "Incorrect";
@@ -38,7 +38,7 @@ function questionOne(){
                     txtScore.innerHTML = "Your total score is: " + score + "/5";
                     break;
                 case 2:
-                    if(score != 0 && response.innerHTML != "Incorrect" && response.innerHTML != ""){
+                    if(score != 0 && response.innerHTML == "Correct"){
                         score--;
                     }
                     response.innerHTML = "Incorrect";
@@ -64,7 +64,7 @@ function questionOne(){
         default:
             switch (questionNumber) {
                 case 0:
-                    if(score != 0 && response.innerHTML != "Incorrect" && response.innerHTML != ""){
+                    if(score != 0 && response.innerHTML == "Correct"){
                         score--;
                     }
                     response.innerHTML = "Incorrect";
@@ -94,7 +94,7 @@ function questionOne(){
                     }
                     break;
                 case 3:
-                    if(score != 0 && response.innerHTML != "Incorrect" && response.innerHTML != ""){
+                    if(score != 0 && response.innerHTML == "Correct"){
                         score--;
                     }
                     response.innerHTML = "Incorrect";
@@ -139,7 +139,7 @@ function questionTwo(){
                 }
             }
             else{
-                if(score != 0 && response.innerHTML != "Incorrect" && response.innerHTML != ""){
+                if(score != 0 && response.innerHTML == "Correct"){
                     score--;
                 }
                 response.innerHTML = "Incorrect";
@@ -149,7 +149,7 @@ function questionTwo(){
             break;
         case 1:
             answer = answer.toLowerCase;
-            if(answer == "moo" || answer == "Moo"){
+            if(answer == "moo"){
                 if(response.innerHTML != "Correct"){
                     score++;
                 }
@@ -161,7 +161,7 @@ function questionTwo(){
                 }
             }
             else{
-                if(score != 0 && response.innerHTML != "Incorrect" && response.innerHTML != ""){
+                if(score != 0 && response.innerHTML == "Correct"){
                     score--;
                 }
                 response.innerHTML = "Incorrect";
@@ -171,7 +171,7 @@ function questionTwo(){
             break;
         case 2:
             answer = answer.toLowerCase;
-            if(answer == "apple" || answer == "Apple"){
+            if(answer == "apple"){
                 if(response.innerHTML != "Correct"){
                     score++;
                 }
@@ -183,7 +183,7 @@ function questionTwo(){
                 }
             }
             else{
-                if(score != 0 && response.innerHTML != "Incorrect" && response.innerHTML != ""){
+                if(score != 0 && response.innerHTML == "Correct"){
                     score--;
                 }
                 response.innerHTML = "Incorrect";
@@ -193,7 +193,7 @@ function questionTwo(){
             break
         default:
             answer = answer.toLowerCase;
-           if(answer == "fire" || answer == "Fire"){
+           if(answer == "fire"){
             if(response.innerHTML != "Correct"){
                 score++;
             }
@@ -205,7 +205,7 @@ function questionTwo(){
             }
            }
            else{
-            if(score != 0 && response.innerHTML != "Incorrect" && response.innerHTML != ""){
+            if(score != 0 && response.innerHTML == "Correct"){
                 score--;
             }
             response.innerHTML = "Incorrect";
@@ -254,7 +254,7 @@ function questionThree(){
                 }
             }
             else{
-                if(score != 0 && response.innerHTML != "Incorrect" && response.innerHTML != ""){
+                if(score != 0 && response.innerHTML == "Correct"){
                     score--;
                 }
                 response.innerHTML = "Incorrect";
@@ -275,7 +275,7 @@ function questionThree(){
                 }
             }
             else{
-                if(score != 0 && response.innerHTML != "Incorrect" && response.innerHTML != ""){
+                if(score != 0 && response.innerHTML == "Correct"){
                     score--;
                 }
                 response.innerHTML = "Incorrect";
@@ -296,7 +296,7 @@ function questionThree(){
                 }
             }
             else{
-                if(score != 0 && response.innerHTML != "Incorrect" && response.innerHTML != ""){
+                if(score != 0 && response.innerHTML == "Correct"){
                     score--;
                 }
                 response.innerHTML = "Incorrect";
@@ -317,7 +317,7 @@ function questionThree(){
             }
            }
            else{
-            if(score != 0 && response.innerHTML != "Incorrect" && response.innerHTML != ""){
+            if(score != 0 && response.innerHTML == "Correct"){
                 score--;
             }
             response.innerHTML = "Incorrect";
@@ -367,7 +367,7 @@ function questionFour(){
                 }
             }
             else{
-                if(score != 0 && response.innerHTML != "Incorrect" && response.innerHTML != ""){
+                if(score != 0 && response.innerHTML == "Correct"){
                     score--;
                 }
                 response.innerHTML = "Incorrect";
@@ -388,7 +388,7 @@ function questionFour(){
                 }
             }
             else{
-                if(score != 0 && response.innerHTML != "Incorrect" && response.innerHTML != ""){
+                if(score != 0 && response.innerHTML == "Correct"){
                     score--;
                 }
                 response.innerHTML = "Incorrect";
@@ -409,7 +409,7 @@ function questionFour(){
                 }
             }
             else{
-                if(score != 0 && response.innerHTML != "Incorrect" && response.innerHTML != ""){
+                if(score != 0 && response.innerHTML == "Correct"){
                     score--;
                 }
                 response.innerHTML = "Incorrect";
@@ -430,7 +430,7 @@ function questionFour(){
             }
            }
            else{
-            if(score != 0 && response.innerHTML != "Incorrect" && response.innerHTML != ""){
+            if(score != 0 && response.innerHTML == "Correct"){
                 score--;
             }
             response.innerHTML = "Incorrect";
@@ -471,7 +471,7 @@ function questionFive(){
                     }
                     break;
                 case 1:
-                    if(score != 0 && response.innerHTML != "Incorrect" && response.innerHTML != ""){
+                    if(score != 0 && response.innerHTML == "Correct"){
                         score--;
                     }
                     response.innerHTML = "Incorrect";
@@ -508,7 +508,7 @@ function questionFive(){
         default:
             switch (questionNumber) {
                 case 0:
-                    if(score != 0 && response.innerHTML != "Incorrect" && response.innerHTML != ""){
+                    if(score != 0 && response.innerHTML == "Correct"){
                         score--;
                     }
                     response.innerHTML = "Incorrect";
@@ -527,7 +527,7 @@ function questionFive(){
                     }
                     break;
                 case 2:
-                    if(score != 0 && response.innerHTML != "Incorrect" && response.innerHTML != ""){
+                    if(score != 0 && response.innerHTML == "Correct"){
                         score--;
                     }
                     response.innerHTML = "Incorrect";
@@ -535,7 +535,7 @@ function questionFive(){
                     txtScore.innerHTML = "Your total score is: " + score + "/5";
                     break;
                 case 3:
-                    if(score != 0 && response.innerHTML != "Incorrect" && response.innerHTML != ""){
+                    if(score != 0 && response.innerHTML == "Correct"){
                         score--;
                     }
                     response.innerHTML = "Incorrect";
