@@ -1,11 +1,12 @@
 function questionOne(){
     var firstQuestion = ["The five rings of the Olympic flag are interlocking.",
-    "Mount Kilimanjaro is the tallest mountain in the world.", "The plural of moose is moosen.",
-    "Computer programming is part of computer science."]
-    var response = document.getElementById("answer1");
+        "Mount Kilimanjaro is the tallest mountain in the world.", "The plural of moose is moosen.",
+        "Computer programming is part of computer science.", "C# is an object oriented programming language.",
+        "HTML is a programming language."]
+    var message = document.getElementById("answer1").innerHTML;
+    var colour = "";
     var txtScore = document.getElementById("score");
     var score = parseFloat(txtScore.innerText[21]);
-    var congrats = document.getElementById("congratulations");
 
     if(Number.isNaN(score)){
         score = 0;
@@ -15,97 +16,112 @@ function questionOne(){
 
     var answer = confirm(firstQuestion[questionNumber])
 
-    switch (answer) {
-        case true:
-            switch (questionNumber) {
-                case 0:
-                    if(response.innerHTML !== "Correct"){
-                        score++;
-                    }
-                    response.innerHTML = "Correct";
-                    response.style.color = "green";
-                    txtScore.innerHTML = "Your total score is: " + score + "/5";
-                    if(score === 5){
-                        congrats.innerHTML= "Congratulations!! You got every question right."
-                    }
-                    break;
-                case 1:
-                    if(score !== 0 && response.innerHTML === "Correct"){
-                        score--;
-                    }
-                    response.innerHTML = "Incorrect";
-                    response.style.color = "red";
-                    txtScore.innerHTML = "Your total score is: " + score + "/5";
-                    break;
-                case 2:
-                    if(score !== 0 && response.innerHTML === "Correct"){
-                        score--;
-                    }
-                    response.innerHTML = "Incorrect";
-                    response.style.color = "red";
-                    txtScore.innerHTML = "Your total score is: " + score + "/5";
-                    break;
-                case 3:
-                    if(response.innerHTML !== "Correct"){
-                        score++;
-                    }
-                    response.innerHTML = "Correct";
-                    response.style.color = "green";
-                    txtScore.innerHTML = "Your total score is: " + score + "/5";
-                    if(score === 5){
-                        congrats.innerHTML= "Congratulations!! You got every question right."
-                    }
-                    break;
-                default:
-                    break;
+    switch (questionNumber) {
+        case 0:
+            if(answer === true) {
+                if (message !== "Correct") {
+                    score++;
+                }
+                message = "Correct";
+                colour = "green";
+            }
+            else {
+                if(score !== 0 && message === "Correct"){
+                    score--;
+                }
+                message = "Incorrect";
+                colour = "red";
             }
             break;
-    
-        default:
-            switch (questionNumber) {
-                case 0:
-                    if(score !== 0 && response.innerHTML === "Correct"){
-                        score--;
-                    }
-                    response.innerHTML = "Incorrect";
-                    response.style.color = "red";
-                    txtScore.innerHTML = "Your total score is: " + score + "/5";
-                    break;
-                case 1:
-                    if(response.innerHTML !== "Correct"){
-                        score++;
-                    }
-                    response.innerHTML = "Correct";
-                    response.style.color = "green";
-                    txtScore.innerHTML = "Your total score is: " + score + "/5";
-                    if(score === 5){
-                        congrats.innerHTML= "Congratulations!! You got every question right."
-                    }
-                    break;
-                case 2:
-                    if(response.innerHTML !== "Correct"){
-                        score++;
-                    }
-                    response.innerHTML = "Correct";
-                    response.style.color = "green";
-                    txtScore.innerHTML = "Your total score is: " + score + "/5";
-                    if(score === 5){
-                        congrats.innerHTML= "Congratulations!! You got every question right."
-                    }
-                    break;
-                case 3:
-                    if(score !== 0 && response.innerHTML === "Correct"){
-                        score--;
-                    }
-                    response.innerHTML = "Incorrect";
-                    response.style.color = "red";
-                    txtScore.innerHTML = "Your total score is: " + score + "/5";
-                    break;
-                default:
-                    break;
+        case 1:
+            if(answer === true) {
+                if (score !== 0 && message === "Correct") {
+                    score--;
+                }
+                message = "Incorrect";
+                colour = "red";
             }
+            else {
+                if(message !== "Correct"){
+                    score++;
+                }
+                message = "Correct";
+                colour = "green";
+            }
+            break;
+        case 2:
+            if(answer === true) {
+                if (score !== 0 && message === "Correct") {
+                    score--;
+                }
+                message = "Incorrect";
+                colour = "red";
+            }
+            else {
+                if(message !== "Correct"){
+                    score++;
+                }
+                message = "Correct";
+                colour = "green";
+            }
+            break;
+        case 3:
+            if(answer === true) {
+                if (message !== "Correct") {
+                    score++;
+                }
+                message = "Correct";
+                colour = "green";
+            }
+            else {
+                if(score !== 0 && message === "Correct"){
+                    score--;
+                }
+                message = "Incorrect";
+                colour = "red";
+            }
+            break;
+        case 4:
+            if(answer === true) {
+                if (message !== "Correct") {
+                    score++;
+                }
+                message = "Correct";
+                colour = "green";
+            }
+            else {
+                if(score !== 0 && message === "Correct"){
+                    score--;
+                }
+                message = "Incorrect";
+                colour = "red";
+            }
+            break;
+        case 5:
+            if(answer === true) {
+                if (score !== 0 && message === "Correct") {
+                    score--;
+                }
+                message = "Incorrect";
+                colour = "red";
+            }
+            else {
+                if(message !== "Correct"){
+                    score++;
+                }
+                message = "Correct";
+                colour = "green";
+            }
+            break;
+        default:
             break;
     }
+    document.getElementById("answer1").innerHTML = message;
+    document.getElementById("answer1").style.color = colour;
+    if(score === 5){
+        document.getElementById("congratulations").innerHTML= "Congratulations!! You got every question right."
+    }
+    txtScore.innerHTML = "Your total score is: " + score + "/5";
 }  
 
 function questionTwo(){
