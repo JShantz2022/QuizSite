@@ -234,7 +234,7 @@ function questionThree(){
     answer = parseInt(prompt(thirdQuestion[questionNumber]));
     numeric = Number.isNaN(answer);
 
-    while(numeric == false){
+    while(numeric == true){
         answer = parseInt(prompt("You didn't enter a numeric value. Please try again. " + thirdQuestion[questionNumber]));
         numeric = Number.isNaN(answer);
     
@@ -346,7 +346,7 @@ function questionFour(){
     answer = parseInt(prompt(fourthQuestion[questionNumber]));
     numeric = Number.isNaN(answer);
     
-    while(numeric == false){
+    while(numeric == true){
         answer = parseInt(prompt("You didn't enter a numeric value. Please try again. " + fourthQuestion[questionNumber]));
         numeric = Number.isNaN(answer);
     
