@@ -223,7 +223,7 @@ function questionThree(){
     var score = parseFloat(txtScore.innerText[21]);
     var congrats = document.getElementById("congratulations");
     var answer = 0;
-    var numeric;
+    var nonNumeric;
 
     if(Number.isNaN(score)){
         score = 0;
@@ -232,11 +232,11 @@ function questionThree(){
     var questionNumber = Math.floor(Math.random()*thirdQuestion.length);
 
     answer = parseInt(prompt(thirdQuestion[questionNumber]));
-    numeric = Number.isNaN(answer);
+    nonNumeric = Number.isNaN(answer);
 
-    while(numeric == true){
+    while(nonNumeric == true){
         answer = parseInt(prompt("You didn't enter a numeric value. Please try again. " + thirdQuestion[questionNumber]));
-        numeric = Number.isNaN(answer);
+        nonNumeric = Number.isNaN(answer);
     
     }
 
@@ -335,7 +335,7 @@ function questionFour(){
     var score = parseFloat(txtScore.innerText[21]);
     var congrats = document.getElementById("congratulations");
     var answer = 0;
-    var numeric;
+    var nonNumeric;
 
     if(Number.isNaN(score)){
         score = 0;
@@ -344,11 +344,11 @@ function questionFour(){
     var questionNumber = Math.floor(Math.random()*fourthQuestion.length);
 
     answer = parseInt(prompt(fourthQuestion[questionNumber]));
-    numeric = Number.isNaN(answer);
+    nonNumeric = Number.isNaN(answer);
     
-    while(numeric == true){
+    while(nonNumeric == true){
         answer = parseInt(prompt("You didn't enter a numeric value. Please try again. " + fourthQuestion[questionNumber]));
-        numeric = Number.isNaN(answer);
+        nonNumeric = Number.isNaN(answer);
     
     }
     
