@@ -1,0 +1,16 @@
+.answers{
+    display: inline;
+}
+
+.btn{
+    font-size: 16px;
+}
+
+p{
+    font-size: 125%;
+}
+
+#congratulations{
+    font-size: 150%;
+    color: rgb(10, 201, 10);
+}
